@@ -258,5 +258,19 @@
   </script>
 
   <script src="js/i18n.js"></script>
+
+  <div class="visitor-count">
+    <span class="visitor-label">visitors</span>
+    <span class="visitor-num" id="visitorNum">—</span>
+  </div>
+  <script>
+    fetch('https://api.countapi.xyz/hit/paprikachen-io/visits')
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        var el = document.getElementById('visitorNum');
+        if (el && d.value) el.textContent = d.value.toLocaleString();
+      })
+      .catch(function(){});
+  </script>
 </body>
 </html>
