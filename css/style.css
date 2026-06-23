@@ -683,6 +683,15 @@ body.inner-page {
   .card--wide.is-open .card-details {
     max-height: 600px;
   }
+
+  /* Story CTA */
+  .story-cta {
+    padding: 2.5rem 1.25rem 4rem;
+    gap: 1rem;
+  }
+  .story-cta-text {
+    font-size: 0.75rem;
+  }
 }
 
 /* ── Scroll story ── */
@@ -1236,10 +1245,46 @@ body.inner-page {
 }
 
 @media (max-width: 640px) {
-  .story-inner--split { grid-template-columns: 1fr; gap: 2.5rem; }
-  .story-photos { height: 340px; }
-  .story-photo img { height: 160px; }
-  .story-words p { font-size: 1.15rem; }
-  .story-num { top: 1.5rem; right: 1.5rem; }
-  .story-videos--row video { height: 40vh; }
+  /* Chapter shared */
+  .story-chapter { padding: 4rem 1.25rem 2.5rem; min-height: auto; }
+  .story-num { top: 1.25rem; right: 1.25rem; }
+  .story-words p { font-size: 1.1rem; }
+
+  /* Ch1: makeup — stack photos then text */
+  .story-inner--split { grid-template-columns: 1fr; gap: 2rem; }
+  .story-photos { height: 280px; }
+  .story-photo img { height: 130px; }
+
+  /* Ch2: dance — scroll horizontally */
+  .story-videos--row { overflow-x: auto; justify-content: flex-start; padding-bottom: 0.5rem; }
+  .story-videos--row video { height: 52vw; flex-shrink: 0; }
+
+  /* Ch3: sing — stack photo on top, video + text below */
+  .story-inner--sing { grid-template-columns: 1fr; height: auto; gap: 1.2rem; }
+  .sing-photo img { width: 100%; height: 44vw; object-fit: cover; }
+  .sing-right { height: auto; }
+  .sing-right video { height: 56vw; flex: none; }
+
+  /* Ch4: service mosaic — 2-col grid */
+  .story-inner--mosaic { flex-direction: column; gap: 1.5rem; }
+  .mosaic-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: auto; }
+  .mosaic-photo { height: 38vw; }
+  .mosaic-photo.m-tall { grid-row: auto; }
+
+  /* Ch5: design masonry — 2 columns */
+  .story-inner--design { gap: 1.5rem; }
+  .design-gallery { columns: 2; }
+
+  /* Ch6: pink hair — stack top row + bottom row */
+  .pinkhair-top { flex-wrap: wrap; }
+  .pinkhair-top-photo { flex: 1 1 45%; height: 28vw; }
+  .pinkhair-top-landscape { flex: 1 1 100%; height: 48vw; }
+  .pinkhair-row { flex-wrap: wrap; }
+  .pinkhair-photo img { height: 38vw; }
+
+  /* Ch7: BMC — auto heights */
+  .bmc-row { height: auto; }
+  .bmc-row .bmc-photo img { height: 38vw; object-fit: cover; }
+  .bmc-row--panoramic { height: auto; }
+  .bmc-row--panoramic .bmc-photo img { height: 38vw; }
 }
