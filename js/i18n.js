@@ -60,6 +60,11 @@ const translations = {
     'game.link5gh': 'View on GitHub →',
     'project.teaser3': 'A 3D bathroom scene with an orchid plant as the hero model, built in Maya and textured in Substance Painter.',
     'project.link': 'View project →',
+    'project.tag4': 'Next.js · TypeScript · AI',
+    'project.title4': 'Playtest Platform',
+    'project.teaser4': 'Private browser playtests for web games, with screen and voice recorded on one timeline and timestamped feedback.',
+    'project.desc4': 'A developer uploads a web-game ZIP, writes a questionnaire and shares one invite link. Testers play in the browser while their screen and mic are recorded on one timeline, typing comments as they go. When they finish, each question shows <strong>recall cards</strong>: the tester\'s own words, the timestamp, a neutral prompt, and a 10-second replay of that moment — nothing is filled in for them. The developer then reviews each session with a clickable timeline, the answers, and which recall cards were used.<br><br>Speech is transcribed with word-level timestamps (local Whisper by default, English and Mandarin), and comments are matched to questions with a single LLM call per session; the model can only reference comment IDs, so it can never rewrite what a tester said. Games run in a sandboxed iframe, and sessions auto-delete after 7 days. Built with Next.js, TypeScript and SQLite, with unit and end-to-end tests in CI.<br><br>By Paprika Chen &amp; Amilia Liu.',
+    'project.link4': 'View on GitHub →',
 
     'about.name': 'Paprika Chen',
     'about.role': 'Designer · Researcher · Creative Technologist',
@@ -140,6 +145,11 @@ const translations = {
     'game.link5gh': '在 GitHub 上查看 →',
     'project.teaser3': '以兰花为主角模型的三维浴室场景，在 Maya 中建模并用 Substance Painter 制作材质。',
     'project.link': '查看项目 →',
+    'project.tag4': 'Next.js · TypeScript · AI',
+    'project.title4': 'Playtest Platform 游戏试玩平台',
+    'project.teaser4': '面向网页游戏的私密浏览器试玩平台：屏幕与语音录在同一条时间线上，反馈带时间戳。',
+    'project.desc4': '开发者上传网页游戏的 ZIP 包、编写问卷，然后分享一个邀请链接。测试者在浏览器里试玩，屏幕和麦克风录制在同一条时间线上，也可以边玩边输入评论。试玩结束后，每道问卷题目都会显示<strong>回忆卡片</strong>：测试者自己说过的话、对应时间点、一句中性的提示，以及那一刻前后 10 秒的回放——但不会替测试者填写任何答案。开发者可以通过可点击的时间线、问卷答案和回忆卡片的使用情况来回顾每一场试玩。<br><br>语音会转写为带逐词时间戳的文字（默认使用本地 Whisper，支持中英文）；评论与问题的匹配每场试玩只调用一次大模型，且模型只能引用评论 ID，因此无法改写测试者的原话。游戏运行在沙盒 iframe 中，试玩记录 7 天后自动删除。使用 Next.js、TypeScript 和 SQLite 构建，CI 中包含单元测试与端到端测试。<br><br>作者：Paprika Chen、Amilia Liu。',
+    'project.link4': '在 GitHub 上查看 →',
 
     'about.name': 'Paprika Chen',
     'about.role': '设计师 · 研究者 · 创意技术人',
